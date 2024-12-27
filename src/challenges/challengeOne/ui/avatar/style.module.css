@@ -1,0 +1,9 @@
+.avatarContainer {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}

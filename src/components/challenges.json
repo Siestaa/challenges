@@ -1,0 +1,14 @@
+{
+  "challenges": [
+    {
+      "name": "Challenge №1: Карточка пользователя",
+      "id": "1",
+      "link": "challengeOne"
+    },
+    {
+      "name": "Challenge №2: Карточка товара",
+      "id": "2",
+      "link": "challengeTwo"
+    }
+  ]
+}

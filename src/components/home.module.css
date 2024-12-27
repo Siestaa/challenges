@@ -1,0 +1,53 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.currentPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        color: darkslategray;
+
+        & .dropdown {
+            stroke: darkslategray;
+        }
+    }
+}
+
+.pageList {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 2px solid black;
+    border-top: none;
+    padding: 10px 20px;
+}
+
+.pageItem {
+    width: 100%;
+    display: flex;
+    color: black;
+    font-weight: 400;
+
+    &:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+}
+
+.dropdown {
+    stroke: black;
+    transition: 0.5s;
+}
