@@ -1,0 +1,33 @@
+.photosContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.miniPhotoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: start;
+}
+
+.miniPhotosList {
+    list-style: none;
+    padding: 0;
+    max-height: 460px;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.miniPhotosListContainer {
+    --step: attr(data-step);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.5s;
+    transform: translateY(calc(var(--step) * 120px));
+}
+
+.arrow {
+    cursor: pointer;
+}

@@ -4,10 +4,10 @@ interface AvatarProps {
   photo: string;
 }
 
-export const Avatar = (props: AvatarProps) => {
+export const Avatar = ({photo}: AvatarProps) => {
   return (
     <div className={styles.avatarContainer}>
-      <img src={`/${props.photo}`} />
+      <img src={`/challengeOne/${photo}`} />
     </div>
   );
 };

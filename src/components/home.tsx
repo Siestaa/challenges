@@ -8,10 +8,15 @@ export const Home = () => {
   const [currentPage, setCurrentPage] = useState('Выберите челендж');
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClickCurrentPage = (name: string) => {
+    setCurrentPage(name);
+    setIsOpen(false);
+  }
+
   return (
     <>
       <div className={styles.homeContainer}>
-        <div className={styles.currentPage}>
+        <div className={styles.currentPage} onClick={() => setIsOpen(prevState => !prevState)}>
           <span>{currentPage}</span>
           <svg
             className={styles.dropdown}
@@ -29,13 +34,13 @@ export const Home = () => {
             />
           </svg>
         </div>
-        <div className={styles.pageList}>
+        <div className={classNames({[styles.pageList] : true, [styles.pageListOpen]: isOpen})}>
           {challengesList.challenges.map((challenge) => (
             <Link
               className={styles.pageItem}
               key={challenge.id}
               to={`/${challenge.link}`}
-              onClick={() => setCurrentPage(challenge.name)}>
+              onClick={() => handleClickCurrentPage(challenge.name)}>
               {challenge.name}
             </Link>
           ))}

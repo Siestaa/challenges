@@ -6,7 +6,7 @@ import { Button } from '../../ui/button/button';
 import { useCurrentCoordinate } from './useCurrentCoordinate';
 import { useRef } from 'react';
 
-export const Card = () => {
+export const ChallengeOne = () => {
   const card = useRef<HTMLDivElement>(null);
   const glow = useRef<HTMLDivElement>(null);
 

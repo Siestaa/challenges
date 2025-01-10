@@ -1,0 +1,11 @@
+.miniImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}

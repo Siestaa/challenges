@@ -15,7 +15,7 @@ export const ListContacts = ({ list }: ListContactsProps) => {
       {list.map((contact) => (
         <li key={contact.ref}>
           <a href={contact.ref}>
-            <img src={contact.icon} width="48" height="48" />
+            <img src={`/challengeOne/${contact.icon}`} width="48" height="48" />
           </a>
         </li>
       ))}
