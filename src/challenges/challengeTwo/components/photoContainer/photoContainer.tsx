@@ -1,6 +1,6 @@
 import styles from "./styles.module.css"
-import {MainPhoto} from "../../ui/mainPhoto/mainPhoto.tsx";
-import {MiniPhoto} from "../../ui/miniPhoto/miniPhoto.tsx";
+import {MainPhoto} from "../../ui/mainPhoto/mainPhoto";
+import {MiniPhoto} from "../../ui/miniPhoto/miniPhoto";
 import {useState} from "react";
 
 interface IPhoto {
